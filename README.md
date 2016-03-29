@@ -18,7 +18,7 @@ Regular expressions commonly used:
 ```
 
 ###Convert C# to Typescript
-Convert single line numeric auto-properties:
+**Convert single line numeric auto-properties:**
 
 Replace:
 ```
@@ -29,7 +29,7 @@ With:
 $2 : number;
 ```
 
-Convert single line DateTime auto-properties:
+**Convert single line DateTime auto-properties:**
 Replace:
 ```
 public DateTime (\S*) { get; set; }
@@ -39,7 +39,7 @@ With:
 $1 : Date;
 ```
 
-Convert other single line auto-properties:
+**Convert other single line auto-properties:**
 Replace:
 ```
 public (\S*) (\S*) { get; set; }
