@@ -17,34 +17,28 @@ Regular expressions commonly used:
 (public|private)? (virtual) \w\S*\s\S*\s*{ get; set; }
 ```
 
-###Convert C# to Typescript
+###Convert C# to Typescript *(Search-Replace pairs)*
 **Convert single line numeric auto-properties:**
 
-Replace:
 ```
 public (int|decimal|float|double|long) (\S*) { get; set; }
 ```
-With:
 ```
 $2 : number;
 ```
 
 **Convert single line DateTime auto-properties:**
-Replace:
 ```
 public DateTime (\S*) { get; set; }
 ```
-With:
 ```
 $1 : Date;
 ```
 
 **Convert other single line auto-properties:**
-Replace:
 ```
 public (\S*) (\S*) { get; set; }
 ```
-With:
 ```
 $2 : $1;
 ```
