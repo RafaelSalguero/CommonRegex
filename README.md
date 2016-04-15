@@ -7,6 +7,11 @@ Regular expressions commonly used:
 \s*{\s*get\s*\r\n\s*{\s*throw new NotImplementedException\(\);\s*}\s*set\s*{\s*throw new NotImplementedException\(\);\s*}\s*}
 ```
 
+`To implement replace with:`
+```
+ { get; set; }
+```
+
 - C# Attribute
 ```
 \[.*\]
